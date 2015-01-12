@@ -1,0 +1,24 @@
+{
+    "name": "Step",
+    "base": "PersistedModel",
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        },
+        "status": {
+            "type": "boolean"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "nodebs": {
+            "type": "hasMany",
+            "model": "Step",
+            "foreignKey": "nodeID"
+        }
+    },
+    "acls": []
+}

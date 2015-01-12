@@ -1,0 +1,43 @@
+{
+    "name": "Topic",
+    "base": "PersistedModel",
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        },
+        "status": {
+            "type": "boolean"
+        },
+        "visibily": {
+            "type": "string"
+        },
+        "start": {
+            "type": "boolean",
+            "default": false
+        },
+        "topicTypes": {
+            "type": "string"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "nodebs": {
+            "type": "hasMany",
+            "model": "Topic",
+            "foreignKey": "nodeID"
+        },
+        "users": {
+            "type": "hasMany",
+            "model": "user",
+            "foreignKey": "userId",
+            "through": "tUser"
+        }
+    },
+    "acls": []
+}

@@ -1,0 +1,17 @@
+{
+    "name": "notification",
+    "base": "PersistedModel",
+    "properties": {
+        "UnRead": {
+            "type": "boolean"
+        },
+        "content": {
+            "type": "string"
+        }
+    },
+    "validations": [],
+    "relations": {
+        
+    },
+    "acls": []
+}

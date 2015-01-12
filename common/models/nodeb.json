@@ -1,0 +1,40 @@
+{
+    "name": "Nodeb",
+    "base": "PersistedModel",
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        },
+        "content": {
+            "type": "string"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "topic": {
+            "type" : "belongsTo",
+            "model": "Topic",
+            "foreignKey": "topicID"
+        },
+        "comments": {
+            "type": "hasMany",
+            "model": "Nodeb",
+            "foreignKey": "commentID"
+        },
+        "step": {
+            "type": "belongsTo",
+            "model": "Step",
+            "foreignKey": "stepID"
+        },
+        "users": {
+            "type": "hasMany",
+            "model": "user",
+            "foreignKey": "userId",
+            "through": "pUser"
+        }
+    },
+    "acls": []
+}

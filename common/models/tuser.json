@@ -1,0 +1,20 @@
+{
+    "name": "tUser",
+    "base": "PersistedModel",
+    "properties": {
+    },
+    "validations": [],
+    "relations": {
+        "user": {
+            "type": "belongsTo",
+            "model": "user",
+            "foreignKey": "userID"
+        },
+        "topic": {
+            "type": "belongsTo",
+            "model": "Topic",
+            "foreignKey": "topicID"
+        }
+    },
+    "acls": []
+}

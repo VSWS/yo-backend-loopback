@@ -1,0 +1,7 @@
+{
+    "host": "0.0.0.0",
+    "port": 1234,
+    "restApiRoot": "/vapi",
+    "cookieSecret": "246bace2-38cb-4138-85d9-0ae8160b07c8",
+    "serverUrl": "http://yolosh.com:1234"
+}

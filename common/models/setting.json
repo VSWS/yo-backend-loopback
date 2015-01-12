@@ -1,0 +1,14 @@
+{
+    "name": "setting",
+    "base": "PersistedModel",
+    "properties": {
+        "lastLogin": {
+            "type": "string"
+        }
+    },
+    "validations": [],
+    "relations": {
+        
+    },
+    "acls": []
+}
